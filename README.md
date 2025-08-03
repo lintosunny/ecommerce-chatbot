@@ -4,17 +4,17 @@ This is a **Proof of Concept (POC)** for an intelligent chatbot designed for an 
 
 This chatbot currently supports three intents:
 
-**faq**: Handles frequently asked questions related to the platform's policies or general information.
+**1. faq**: Handles frequently asked questions related to the platform's policies or general information.
 > _"Is online payment available?"_
 
 
 
-**sql**: Activated when users request product listings or information based on real-time database queries.
+**2. sql**: Activated when users request product listings or information based on real-time database queries.
 > _"Show me all Nike shoes below Rs. 3000."_
 
 
 
-**smalltalk**: Responds to casual or conversational messages to make the chatbot more engaging and human-like.
+**3. smalltalk**: Responds to casual or conversational messages to make the chatbot more engaging and human-like.
 > _"How are you?"_  
 
 ## 💡 Key Features

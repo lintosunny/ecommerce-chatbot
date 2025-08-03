@@ -1,9 +1,10 @@
 from semantic_router import Route
 from semantic_router.routers import SemanticRouter
 from semantic_router.encoders import HuggingFaceEncoder
+from src.config import EMBEDDING_MODEL
 
 encoder = HuggingFaceEncoder(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
+    model_name=EMBEDDING_MODEL
 )
 
 faq = Route(
@@ -14,6 +15,7 @@ faq = Route(
         "How can I track my order?",
         "What payment methods are accepted?",
         "How long does it take to process a refund?",
+        "What is your policy on defective product?",
     ]
 )
 
@@ -41,11 +43,11 @@ small_talk = Route(
 
 router = SemanticRouter(
     routes=[faq, sql, small_talk],
-    encoder=encoder
+    encoder=encoder,
+    auto_sync="local"
 )
 
 if __name__ == "__main__":
-    # Test the router with a sample utterance
-    utterance = "What is the return policy of the products?"
-    response = router(utterance)
-    print(f"Response for '{utterance}': {response.name}")
+    print(router("What is the return policy of the products?").name)
+    print(router("Pink Puma shoes in price range 5000 to 1000").name)
+    print(router("How are you?").name)
