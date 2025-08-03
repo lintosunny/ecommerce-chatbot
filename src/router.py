@@ -47,5 +47,5 @@ router = SemanticRouter(
 if __name__ == "__main__":
     # Test the router with a sample utterance
     utterance = "What is the return policy of the products?"
-    response = router.route(utterance)
+    response = router(utterance)
     print(f"Response for '{utterance}': {response.name}")

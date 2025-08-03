@@ -4,20 +4,17 @@ This is a **Proof of Concept (POC)** for an intelligent chatbot designed for an 
 
 This chatbot currently supports three intents:
 
-### 1. `faq`
-Handles frequently asked questions related to the platform's policies or general information.
+**faq**: Handles frequently asked questions related to the platform's policies or general information.
 > _"Is online payment available?"_
 
 
 
-### 2. `sql`
-Activated when users request product listings or information based on real-time database queries.
+**sql**: Activated when users request product listings or information based on real-time database queries.
 > _"Show me all Nike shoes below Rs. 3000."_
 
 
 
-### 3. `smalltalk`
-Responds to casual or conversational messages to make the chatbot more engaging and human-like.
+**smalltalk**: Responds to casual or conversational messages to make the chatbot more engaging and human-like.
 > _"How are you?"_  
 
 ## 💡 Key Features
@@ -79,11 +76,11 @@ Once started app will be open in your default web browser.
 * Discussions: Use GitHub Discussions for questions
 * Contact: lintosunny111@gmail.com
 
+## Contribution
+Feel free to contribute or adapt the chatbot to your own platform!
+
 ## License
 This project is licensed under the MIT License 
-
----
-Feel free to contribute or adapt the chatbot to your own platform!
 
 
 
