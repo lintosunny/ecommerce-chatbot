@@ -86,6 +86,13 @@ def faq_chain(query):
 
 if __name__ == '__main__':
     ingest_faq_data("data/faq_data.csv")
-    print(f"Q: what's your policy on defective products? ---> A: {faq_chain('what is your policy on defective products?')}")
-    print(f"Q: Do you take cash as a payment option? ---> A: {faq_chain('Do you take cash as a payment option?')}")
-    print(f"Q: What is the revenue of flipkart? ---> A: {faq_chain('What is the revenue of flipkart?')}")
+
+    test_questions = [
+        "what's your policy on defective products?",
+        "Do you take cash as a payment option?",
+        "What is the revenue of flipkart?"
+    ]
+
+    for question in test_questions:
+        answer = faq_chain(question)
+        print(f"Q: {question} ---> A: {answer}")

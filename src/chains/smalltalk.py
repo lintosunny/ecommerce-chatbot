@@ -29,8 +29,13 @@ def talk(query):
 
 
 if __name__ == "__main__":
-    print(f"Q: How are you? ---> A: {talk('How are you?')}")
-    print(f"Q: What is your name? ---> A: {talk('What is your name?')}")
-    print(f"Q: Are you a robot? ---> A: {talk('Are you a robot?')}")
-    print(f"Q: What do you do? ---> A: {talk('What do you do?')}")
-    print(f"Q: What is your favorite color? ---> A: {talk('What is your favorite color?')}")
+    test_questions = [
+        "How are you?",
+        "What is your name?",
+        "What do you do?",
+        "What is your favorite color?"
+    ]
+
+    for question in test_questions:
+        answer = talk(question)
+        print(f"Q: {question} ---> A: {answer}")
