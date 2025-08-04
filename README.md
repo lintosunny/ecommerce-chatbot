@@ -15,13 +15,16 @@ This chatbot currently supports three intents:
 
 
 **3. smalltalk**: Responds to casual or conversational messages to make the chatbot more engaging and human-like.
-> _"How are you?"_  
+> _"How are you?"_ 
 
 ## 💡 Key Features
 
 - Intent classification using NLP
 - Real-time database querying
 - Friendly and interactive small talk capabilities
+
+## Demo
+![Demo](assets/demo.gif)
 
 ## Data Collection
 
@@ -66,7 +69,7 @@ GROQ_API_KEY=your_groq_api_key_here
 
 5. **Run the App**
 ```
-streamlit run src/main.py
+streamlit run main.py
 ```
 Once started app will be open in your default web browser.
 
@@ -78,9 +81,5 @@ Once started app will be open in your default web browser.
 
 ## Contribution
 Feel free to contribute or adapt the chatbot to your own platform!
-
-## License
-This project is licensed under the MIT License 
-
 
 
