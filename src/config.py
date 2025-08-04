@@ -12,3 +12,4 @@ EMBEDDING_MODEL="sentence-transformers/all-MiniLM-L6-v2"
 TEMPARATURE=0.2
 MAX_TOKENS=1024
 DB_PATH = "src/database/db.sqlite"
+FAQ_PATH= "data/faq_data.csv"
